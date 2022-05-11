@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/3b14ec5cd6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style-book.css">
+        <title>Book a room at Serenity Hotel</title>
+    </head>
+
+    <body>
+        <script src="/js/book.js" defer></script>
+        <nav class="navbar">
+            <a href="#" id="moonButton"><i class="fa-solid fa-moon icon-moon"></i></a>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="gomain">Go to Main</a></li>
+                <li><a href="aboutus.html" class="aboutus">About Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-section">
+            <div class="img-main-form">
+                <img src="/img/img-book.svg" alt="a hotel room">
+                <div class="form-button">
+                    <form class="form-booking">
+                        <label for="fullname"></label><br>
+                            <input id="inputBook" class="input-book" type="text" id="fullname" name="fullname"
+                                placeholder="Jane Doe"><br>
+                        <label for="address"></label><br>
+                            <input class="input-book" type="text" id="address" name="address"
+                                placeholder="Streetname 11, 10101 Berlin"><br>
+                        <label for="email"></label><br>
+                            <input class="input-book" type="text" id="email" name="email" 
+                                placeholder="example@mail.com">
+                    </form>
+                    <a href=""><button id="buttonBook" class="room-button">Book</button></a>
+                    <div id="outputBook"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-up">
+                <div class="footer-nav">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Media</h3>
+                    <ul>
+                        <li>Press Release</li>
+                        <li>Blog Posts</li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Our Newsletter</h3>
+                    <input class="input-subs" type="text" id="email" name="email" placeholder="example@mail.com">
+                </div>
+            </div>
+            <div class="footer-down">Elina M. 2022</div>
+        </footer>
+        <!--Photo by Ivan Samkov from Pexels-->
+    </body>
+    
+</html>
