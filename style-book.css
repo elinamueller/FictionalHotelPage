@@ -1,0 +1,344 @@
+@import url('http://fonts.cdnfonts.com/css/pt-mono');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+body {
+    font-family: 'PT Mono', sans-serif;
+    text-align: left;
+    background-color: #E9DCE5;
+    background-image: url("/img/img-main.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+/*dark mode*/
+.dark-mode {
+    background-color: #000;
+    color: #98768e;
+}
+
+.dark-mode li,
+.dark-mode .aboutus,
+.dark-mode .gomain,
+.dark-mode .footer-down,
+.dark-mode .footer-nav {
+    color: #98768e;
+}
+
+.dark-mode .icon-moon {
+    color: white;
+}
+
+.dark-mode .icon-moon:hover {
+    color: #E9DCE5;
+}
+
+.dark-mode .aboutus:hover,
+.dark-mode .gomain:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #E9DCE5;
+    color: #E9DCE5;
+}
+
+.dark-mode .input-book {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #98768e;
+}
+
+.dark-mode label,
+.dark-mode textarea,
+.dark-mode select,
+.dark-mode .input-book {
+    font-family: 'PT Mono', sans-serif;
+    color: #98768e;
+}
+
+.dark-mode #outputBook {
+    color: white;
+}
+
+.dark-mode .room-button {
+    background: rgba(0, 0, 0, 0.15);
+    color: #98768e;
+    border-color: #98768e;
+    font-size: 28px;
+}
+
+.dark-mode .room-button:hover {
+    background: rgb(0, 0, 0, 0.4);
+    color: #E9DCE5;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/*navigation bar*/
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.gomain,
+.aboutus {
+    display: flex;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    color: #000;
+    font-family: 'PT Mono', sans-serif;
+    cursor: pointer;
+}
+
+.gomain:hover,
+.aboutus:hover {
+    transition: 0.3 ease;
+    padding: 20px 15px;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #000;
+    color: #E9DCE5;
+    font-weight: bold;
+}
+
+.icon-moon {
+    font-size: 50px;
+    color: #000;
+}
+
+.icon-moon:hover {
+    color: white;
+    transition: 1s ease;
+}
+
+/* main text and image*/
+.main-section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
+.img-main-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label,
+textarea,
+select,
+.input-book {
+    font-family: 'PT Mono', sans-serif;
+    color: #E9DCE5;
+    font-size: 26px;
+    width: 600px;
+    height: 70px;
+    outline: none;
+}
+
+.input-book {
+    padding: 20px 15px;
+    background: rgb(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.room-button,
+.room-button:hover {
+    width: 50%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #000;
+    font-family: 'PT Mono', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.room-button {
+    background: rgb(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.room-button:hover {
+    transition: 0.3 ease;
+    background: rgb(0, 0, 0, 0.4);
+    color: #E9DCE5;
+    font-weight: bold;
+}
+
+#outputBook {
+    color: white;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 11px;
+    color: rgb(0, 0, 0, 0.55);
+    height: 5vw;
+    width: 100vw;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 80vw;
+}
+
+.footer-nav li:hover {
+    color: #000;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-subs {
+    color: rgb(0, 0, 0, 0.55);
+    outline: none;
+}
+
+/*responsive mobile*/
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .navbar,
+    .navbar-list,
+    .main-section {
+        height: auto;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .gomain,
+    .aboutus,
+    .room-button {
+        font-size: 16px;
+    }
+
+    .input-book {
+        font-size: 16px;
+    }
+
+    .gomain,
+    .aboutus {
+        margin-top: 15px;
+    }
+
+    .main-section,
+    .form-button,
+    .input-book,
+    .room-button {
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .room-button {
+        width: 50%;
+    }
+
+    .room-button:hover {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+
+    .footer-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .footer-nav {
+        height: auto;
+        font-size: 10px;
+    }
+
+    img,
+    .footer-down,
+    .icon-moon {
+        display: none;
+    }
+}
