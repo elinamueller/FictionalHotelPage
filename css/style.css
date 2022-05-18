@@ -1,3 +1,6 @@
+/*to improve: combine all three CSS files into a single one,
+footer text is squeezed in mobile version-> adjust flex-direction*/
+
 @import url('http://fonts.cdnfonts.com/css/pt-mono');
 
 * {
